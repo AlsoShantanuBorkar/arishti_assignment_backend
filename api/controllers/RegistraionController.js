@@ -5,7 +5,6 @@ const jwt = require("jsonwebtoken");
 
 const RegistraionController = async (req, res) => {
   try {
-    console.log(req.body);
     const { first_name, last_name, email, password, fcm_token } = req.body;
 
     if (!(first_name && last_name && email && password)) {
