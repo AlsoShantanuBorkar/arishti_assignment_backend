@@ -1,8 +1,9 @@
 const { mongoose } = require("mongoose");
 
 const MessageModel = new mongoose.Schema({
-  sender_email: { type: String, default: null },
-  receiver_email: { type: String, default: null },
+  userOne: { type: String, default: null },
+  userTwo: { type: String, default: null },
+  from:{type:String,default:null},
   message: { type: String, default: "" },
 });
 

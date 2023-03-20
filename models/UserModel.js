@@ -6,7 +6,7 @@ const UserModel = new mongoose.Schema({
   email: { type: String, unique: true },
   password: { type: String },
   token: { type: String },
-  fcm_token: { type: String,default:null,sparse:true},
+  fcm_token: { type: String,unique:true},
 });
 
-module.exports = mongoose.model("UserModel", UserModel);
+module.exports = mongoose.model("users", UserModel);
